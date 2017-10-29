@@ -1,0 +1,58 @@
+Monk's Problem 1
+
+The MONK's problems are a collection of three binary classification
+
+problems. Here you have to solve the first problem. 
+
+The dataset consists of vectors over a six-attribute discrete domain. 
+
+Each data point is of the form.
+
+  <name>: <value1> <value2> <value3> <value4> <value5> <value6> -> <class>
+
+where <name> is an ASCII-string (unique for each data point), <value n> represents the value of
+
+attribute # n, and <class> is either 0 or 1, depending on the class
+
+this example belongs to. The attributes may take the following values:
+
+	attribute#1 :   {1, 2, 3}
+
+	attribute#2 :   {1, 2, 3}
+
+	attribute#3 :   {1, 2}
+
+	attribute#4 :   {1, 2, 3}
+
+	attribute#5 :   {1, 2, 3, 4}
+
+	attribute#6 :   {1, 2}	
+
+Thus, the six attributes span a space of 432=3x3x2x3x4x2 examples.
+
+***********************************************************************
+
+
+* Part 1: Use this data set to create a classifier, that generalize from the dataset (attached) and then accurately predict whether the vector point is of class 1 or 0.
+* Part 2: Predict a logical explanation for each class 1 or 0, using the dataset.
+For example one (incorrect example) of an explanation for this dataset is : If attribute_1 = 1 then class = 0;
+
+* The data: The directory contains 558 vector points. The last column is the labeled value of the vector point as 1 or 0. Please find the dataset attached.
+
+* What language should I use?
+
+Scala is preferable. Java 8 with lambda functions is also acceptable. Either way, please make sure to add documentation.
+
+SBT is recommended as the build tool. Maven is acceptable. 
+
+* Can I use X?
+
+Any dependencies that are available from the maven repository are acceptable, and must be listed in the build file. No umanaged dependencies are allowed. Open source projects are preferrable.
+
+* What are you looking for?
+
+We'll look at your coding style. The organization of the project. Proper choice of data structures. Adherence to functional programming rules, like referential purity and preference for immutable datastructues. 
+
+* What should I deliver?
+
+Your code and the results, with brief instructions on how to build and run your solution.
